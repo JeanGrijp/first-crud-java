@@ -1,0 +1,1368 @@
+{
+  "ci&t_legal": {
+    "welcome_message": "Welcome! You can open a request for CI&T LEGAL using the options provided.",
+    "question": "Como podemos ajudar você?",
+    "labor_documents": {
+      "label": {
+        "title": "Labor Documents",
+        "description_pt": "Este componente abrange a solicitação de elaboração ou análise de documentos trabalhistas.",
+        "description_en": "This component covers the request for the preparation or analysis of labor-related documents."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Descrição curta do assunto principal para facilitar o triage."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": false,
+        "helper": "Inclua os detalhes relevantes do caso trabalhista e quaisquer instruções adicionais."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o nome da empresa cliente relacionada ao pedido."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Arraste e solte arquivos ou use o botão Procurar para anexar documentos relevantes."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione colegas que precisam acompanhar o ticket informando nome ou e-mail."
+      }
+    },
+    "clients": {
+      "label": {
+        "title": "Clients",
+        "description_pt": "Este componente abrange todas as questões relacionadas aos clientes, incluindo elaboração ou análise de contratos e aditivos, com exceção de RFP e NDA, demandas que possuem seus próprios componentes.",
+        "description_en": "This component covers all matters related to clients, including the preparation or analysis of contracts and amendments, except for RFPs and NDAs, which have their own components."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Descreva em poucas palavras o objetivo principal ou tipo de solicitação do cliente."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Informe com precisão o nome da empresa cliente relacionada ao atendimento."
+      },
+      "growth_unit": {
+        "label": "Growth Unit",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Argo",
+          "Aurora",
+          "Box1824",
+          "Centelha",
+          "Delta",
+          "Digital Studio",
+          "GU 01",
+          "GU 02",
+          "GU 03",
+          "GU 04",
+          "GU 05",
+          "GU 06",
+          "GU 07",
+          "GU 08",
+          "GU 09",
+          "Hadar",
+          "Harmony",
+          "Lovelace",
+          "Lumiere",
+          "N/A",
+          "Nova",
+          "Proxima",
+          "Pyxis",
+          "Sapphire",
+          "Theta"
+        ]
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": false,
+        "helper": "Detalhe o contexto, escopo e necessidades específicas relacionadas ao cliente."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe contratos, briefings ou outros documentos relevantes para o time jurídico."
+      }
+    },
+    "consulting": {
+      "label": {
+        "title": "Consulting",
+        "description_pt": "Este componente abrange o atendimento de dúvidas sobre a interpretação de documentos ou questões específicas.",
+        "description_en": "This component covers the handling of inquiries regarding the interpretation of documents or questions about a particular situation."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Resuma a dúvida ou interpretação jurídica que precisa de suporte."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Detalhe o documento, cláusula ou contexto específico para que o jurídico possa orientar corretamente."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Inclua documentos de referência que ajudem o time jurídico a analisar a dúvida."
+      }
+    },
+    "corporate_documents": {
+      "label": {
+        "title": "Corporate Documents",
+        "description_pt": "Este componente abrange a elaboração de documentos societários da empresa, incluindo estatutos, atas de reuniões, procurações, mútuos, declarações e outros reguladores das operações corporativas.",
+        "description_en": "This component covers the preparation of the company's corporate documents, including bylaws, meeting minutes, powers of attorney, loans, declarations, and documents that regulate its corporate operations."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe brevemente qual documento societário precisa ser elaborado ou atualizado."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Forneça detalhes do contexto, prazos e instruções para o documento societário solicitado."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione pessoas que devem acompanhar as atualizações inserindo nome ou e-mail."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": false,
+        "helper": "Use este campo se o documento societário envolver relacionamento com um cliente específico."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe estatutos anteriores, minutas ou qualquer arquivo de referência."
+      }
+    },
+    "documents_to_file": {
+      "label": {
+        "title": "Documents To File",
+        "description_pt": "Este componente abrange a solicitação de arquivamento de documentos assinados por todas as partes envolvidas.",
+        "description_en": "This component covers the request for filing documents signed by all parties involved."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe de forma breve qual documento assinado precisa ser arquivado."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Inclua detalhes sobre o documento (partes envolvidas, tipo, número do processo, prazos para arquivamento etc.)."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": false,
+        "helper": "Use este campo se o arquivo estiver relacionado a um cliente específico."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Envie o documento assinado ou comprovantes complementares."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione outras pessoas que devem receber notificações sobre o arquivamento."
+      }
+    },
+    "documents_request": {
+      "label": {
+        "title": "Documents Request",
+        "description_pt": "Este componente envolve a disponibilização de documentos sob a guarda do departamento jurídico.",
+        "description_en": "This component involves the provision of documents that are under the custody of the legal department."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Descreva rapidamente qual documento precisa ser disponibilizado."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Explique quais documentos são necessários, o motivo da solicitação e prazos envolvidos."
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": false,
+        "helper": "Informe o cliente associado à solicitação, quando aplicável."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": false,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione colegas que precisam acompanhar o andamento inserindo nome ou e-mail."
+      },
+      "priority_level": {
+        "label": "Priority Level",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Blocker",
+          "Critical",
+          "High",
+          "Medium",
+          "Trivial",
+          "Low"
+        ]
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe referências adicionais que ajudem o jurídico a localizar os documentos."
+      }
+    },
+    "documents_to_sign": {
+      "label": {
+        "title": "Documents To Sign",
+        "description_pt": "Este componente abrange a solicitação de assinatura de documentos que não necessitam de análise jurídica.",
+        "description_en": "This component covers the request for the signing of documents that do not require legal analysis."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe rapidamente qual documento precisa de assinatura sem análise jurídica."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Explique o contexto, partes envolvidas, prazos e instruções para a assinatura."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": false,
+        "helper": "Use este campo se o documento estiver relacionado a um cliente específico."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Envie o documento que precisa de assinatura ou outros arquivos de apoio."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione pessoas que devem acompanhar o processo de assinatura."
+      }
+    },
+    "nda": {
+      "label": {
+        "title": "NDA",
+        "description_pt": "Este componente abrange a solicitação ou análise de um acordo de confidencialidade (NDA), necessário para proteger informações da CI&T durante interações com terceiros.",
+        "description_en": "This component covers the request or analysis of a non-disclosure agreement (NDA), a document necessary to protect CI&T's information during interactions with third parties."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe resumidamente o motivo da solicitação ou revisão do NDA."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Detalhe o contexto, as partes envolvidas e quaisquer cláusulas específicas para o acordo de confidencialidade."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o nome da empresa parceira ou cliente que assinará o NDA."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione colegas que precisam acompanhar o andamento do NDA."
+      },
+      "project_information": {
+        "label": "Project Information",
+        "type": "text",
+        "required": true,
+        "helper": "Descreva o projeto, iniciativa ou oportunidade relacionada ao NDA."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe minutas, templates ou documentos auxiliares."
+      },
+      "growth_unit": {
+        "label": "Growth Unit",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Argo",
+          "Aurora",
+          "Box1824",
+          "Centelha",
+          "Delta",
+          "Digital Studio",
+          "GU 01",
+          "GU 02",
+          "GU 03",
+          "GU 04",
+          "GU 05",
+          "GU 06",
+          "GU 07",
+          "GU 08",
+          "GU 09",
+          "Hadar",
+          "Harmony",
+          "Lovelace",
+          "Lumiere",
+          "N/A",
+          "Nova",
+          "Proxima",
+          "Pyxis",
+          "Sapphire",
+          "Theta"
+        ]
+      }
+    },
+    "partnership": {
+      "label": {
+        "title": "Partnership",
+        "description_pt": "Este componente abrange a elaboração ou análise de documentos relacionados a parcerias em geral.",
+        "description_en": "This component covers the preparation or analysis of documents related to partnerships in general."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Descreva rapidamente o tipo de parceria ou documento solicitado."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": false,
+        "helper": "Traga contexto, objetivos, partes envolvidas e observações relevantes sobre a parceria."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Informe a empresa parceira relacionada ao documento."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Envie minutas, termos ou referências que apoiem a análise."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione stakeholders que precisam acompanhar o andamento."
+      }
+    },
+    "projects": {
+      "label": {
+        "title": "Projects",
+        "description_pt": "Este componente é de uso exclusivo do departamento jurídico.",
+        "description_en": "This component is for the exclusive use of the legal department."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Insira o nome do projeto ou assunto principal."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Inclua detalhes completos para o uso interno do departamento jurídico."
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": false,
+        "helper": "Opcionalmente identifique o cliente associado ao projeto."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Adicione os colegas que devem acompanhar esse ticket."
+      },
+      "priority_level": {
+        "label": "Priority Level",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Blocker",
+          "Critical",
+          "High",
+          "Medium",
+          "Trivial",
+          "Low"
+        ]
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe documentos complementares para o projeto."
+      }
+    },
+    "rfp": {
+      "label": {
+        "title": "RFP",
+        "description_pt": "Este componente abrange a análise ou preenchimento de documentos solicitados em processos de concorrência, com prazos para apresentação dos mesmos.",
+        "description_en": "This component covers the analysis or completion of documents requested in a bidding process, usually with a deadline for submission."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Resuma o pedido ou nome do processo de concorrência."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Inclua requisitos, prazos e instruções recebidas na RFP."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o cliente ou órgão responsável pela concorrência."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Envie o pacote da RFP, termos ou materiais recebidos."
+      },
+      "growth_unit": {
+        "label": "Growth Unit",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Argo",
+          "Aurora",
+          "Box1824",
+          "Centelha",
+          "Delta",
+          "Digital Studio",
+          "GU 01",
+          "GU 02",
+          "GU 03",
+          "GU 04",
+          "GU 05",
+          "GU 06",
+          "GU 07",
+          "GU 08",
+          "GU 09",
+          "Hadar",
+          "Harmony",
+          "Lovelace",
+          "Lumiere",
+          "N/A",
+          "Nova",
+          "Proxima",
+          "Pyxis",
+          "Sapphire",
+          "Theta"
+        ]
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Inclua quem deve acompanhar as atualizações."
+      }
+    },
+    "sponsorship": {
+      "label": {
+        "title": "Sponsorship",
+        "description_pt": "Este componente abrange a elaboração ou análise de documentos relacionados a patrocínios, que envolvem a associação da marca CI&T a um projeto, evento ou produto, mediante pagamento.",
+        "description_en": "This component covers the preparation or analysis of documents related to sponsorship, which involves the association of the CI&T brand with a project, event, or product, in exchange for monetary payment."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Resumo do patrocínio ou iniciativa envolvendo a marca CI&T."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Detalhe objetivos, contrapartidas e escopo do patrocínio."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Identifique a organização parceira ou beneficiada pelo patrocínio."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe propostas, contratos ou materiais de referência."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Inclua stakeholders que devem acompanhar o processo."
+      }
+    },
+    "supplier": {
+      "label": {
+        "title": "Supplier",
+        "description_pt": "Este componente abrange a elaboração ou análise de documentos relacionados a fornecedores de serviços ou produtos.",
+        "description_en": "This component covers the preparation or analysis of documents related to suppliers of services or products."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Resumo do pedido relacionado ao fornecedor."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Descreva escopo, tipo de contrato e necessidades do fornecedor."
+      },
+      "ciandt_company": {
+        "label": "CI&T Company",
+        "type": "select",
+        "required": true,
+        "options": [
+          "CI&T CAN",
+          "SOMO GBR",
+          "SOMO COL",
+          "CI&T COL",
+          "CI&T BRA",
+          "CI&T USA",
+          "CI&T AUS",
+          "CI&T CHN",
+          "CI&T JPN",
+          "CI&T GBR",
+          "CI&T PRT",
+          "CI&T CYM",
+          "CI&T ARG",
+          "CI&T US-DE",
+          "BOX 1824",
+          "CI&T OCE",
+          "SOMO US",
+          "CI&T FSS",
+          "CI&T Singapura",
+          "CI&T FIN",
+          "CI&T Filipinas"
+        ]
+      },
+      "client_company": {
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o cliente associado caso o contrato envolva atendimento dedicado."
+      },
+      "procurement_id_number": {
+        "label": "Procurement ID Number",
+        "type": "text",
+        "required": true,
+        "helper": "Insira o número do processo de procurement para referência cruzada."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Adicione contratos, propostas ou documentos do fornecedor."
+      },
+      "users_followers": {
+        "label": "Users followers",
+        "type": "multi_user",
+        "required": false,
+        "helper": "Inclua os participantes que precisam receber notificações."
+      }
+    }
+  },
+  "invoicing": {
+    "welcome_message": "Welcome! You can open a request for Invoicing using the options provided.",
+    "question": "Como podemos ajudar você?",
+    "payment_deadline_change": {
+      "label": {
+        "title": "Alteração de Prazo de Pagamento",
+        "description_pt": "Use este formulário para solicitações de alteração do prazo de pagamento de clientes.",
+        "description_en": "Payment Deadline Change - Use this form for requests to change customer payment deadlines."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe de forma objetiva qual prazo precisa ser ajustado."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": false,
+        "helper": "Detalhe o contexto da alteração, justificativas e datas envolvidas."
+      }
+    },
+    "bank_account_registration": {
+      "label": {
+        "title": "Bank Account Registration",
+        "description_pt": "Formulário exclusivo para solicitação de cadastro de conta bancária.",
+        "description_en": "Exclusive Request for Bank Account Registration."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Resuma o pedido de cadastro de conta."
+      },
+      "customer_registry_id": {
+        "label": "Customer - Registry ID",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o identificador cadastral do cliente."
+      },
+      "country": {
+        "label": "Country",
+        "type": "text",
+        "required": true,
+        "helper": "Indique o país da conta a ser registrada."
+      },
+      "account_number": {
+        "label": "Account Number",
+        "type": "text",
+        "required": true,
+        "helper": "Digite o número completo da conta."
+      },
+      "bank_name": {
+        "label": "Bank Name",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o nome do banco."
+      },
+      "branch": {
+        "label": "Branch",
+        "type": "text",
+        "required": true,
+        "helper": "Preencha a agência/braço responsável."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe comprovantes ou formulários exigidos para o cadastro."
+      }
+    },
+    "nf_invoice_cancellation": {
+      "label": {
+        "title": "Cancelamentos - NF/Invoice (Credit Note)",
+        "description_pt": "Use este fluxo para solicitar notas de crédito ou cancelamentos de Notas Fiscais.",
+        "description_en": "This workflow allows you to request credit notes or \"Notas Fiscal\" cancellations."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Resuma a solicitação de cancelamento."
+      },
+      "document_type": {
+        "label": "Selecione o tipo de Documento",
+        "type": "radio",
+        "required": true,
+        "options": [
+          "Nota Fiscal",
+          "Invoice"
+        ]
+      },
+      "approver": {
+        "label": "Approver",
+        "type": "user",
+        "required": true,
+        "helper": "Escolha o aprovador responsável (digite para pesquisar usuários)."
+      }
+    },
+    "chargeback": {
+      "label": {
+        "title": "Chargeback",
+        "description_pt": "Solicite a emissão de um chargeback fornecendo todas as informações necessárias.",
+        "description_en": "Request the issuance of a chargeback with the necessary information filled out."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe brevemente o motivo do chargeback."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Descreva o chargeback com detalhes, incluindo contexto e justificativas."
+      },
+      "issuing_entity": {
+        "label": "Which entity will issue?",
+        "type": "select",
+        "required": true,
+        "helper": "Selecione a empresa responsável por emitir o chargeback.",
+        "options": [
+          "CI&T OCEANIA PTY LTD - FILIAL",
+          "CIT - Matriz - Campinas",
+          "CIT Portugal",
+          "CIT JAPAN - Tokyo",
+          "CI&T FINANCIAL SERVICES SOLUTIONS, LLC - FILIAL",
+          "CI&T FINTECH SERVICES INC - FILIAL",
+          "CIT Canada",
+          "CIT INC - EUA",
+          "Somo Global INC - Filial USA",
+          "Somo Global SAS - Filial Colombia",
+          "CIT CHINA",
+          "CI&T Digital",
+          "CI&T Australia",
+          "CI&T SG PTE. LTD. (Singapura)",
+          "CI&T Philippines, Inc (Filipinas)",
+          "CI&T HOLDING COMPANY LTD",
+          "CIT UK",
+          "Outro..."
+        ]
+      },
+      "paying_entity": {
+        "label": "Which entity will pay?",
+        "type": "select",
+        "required": true,
+        "helper": "Selecione a empresa que receberá/pagará o chargeback.",
+        "options": [
+          "CI&T OCEANIA PTY LTD - FILIAL",
+          "CIT - Matriz - Campinas",
+          "CIT Portugal",
+          "CIT JAPAN - Tokyo",
+          "CI&T FINANCIAL SERVICES SOLUTIONS, LLC - FILIAL",
+          "CI&T FINTECH SERVICES INC - FILIAL",
+          "CIT Canada",
+          "CIT INC - EUA",
+          "Somo Global INC - Filial USA",
+          "Somo Global SAS - Filial Colombia",
+          "CIT CHINA",
+          "CI&T Digital",
+          "CI&T Australia",
+          "CI&T SG PTE. LTD. (Singapura)",
+          "CI&T Philippines, Inc (Filipinas)",
+          "CI&T HOLDING COMPANY LTD",
+          "CIT UK",
+          "Outro..."
+        ]
+      },
+      "approver": {
+        "label": "Who will approve the issuance?",
+        "type": "user",
+        "required": true,
+        "helper": "Informe o aprovador responsável (digite para pesquisar usuários)."
+      },
+      "invoice_responsible": {
+        "label": "Who is responsible for entering the invoice in the paying entity?",
+        "type": "user",
+        "required": true,
+        "helper": "Selecione quem receberá a fatura relacionada ao chargeback."
+      },
+      "invoice_emails": {
+        "label": "Emails for sending the invoice if necessary",
+        "type": "text",
+        "required": false,
+        "helper": "Adicione e-mails adicionais para envio da fatura."
+      },
+      "chargeback_description": {
+        "label": "Description",
+        "type": "text",
+        "required": false,
+        "helper": "Ex: Chargeback - XXX and YYY revenue transfer."
+      },
+      "currency": {
+        "label": "Currency",
+        "type": "select",
+        "required": true,
+        "options": [
+          "American Dollar (USD)",
+          "Brazilian Real (BRL)",
+          "Pounds (GBP)",
+          "Canadian Dollar (CAD)",
+          "Australian Dollar (AUS)",
+          "Euro (EUR)",
+          "Colombian peso (COP)",
+          "Chinese Yuan (CNY)"
+        ]
+      },
+      "amount": {
+        "label": "Amount",
+        "type": "number",
+        "required": true,
+        "helper": "Informe o valor a ser cobrado."
+      },
+      "cost_center": {
+        "label": "Cost Center",
+        "type": "text",
+        "required": true,
+        "helper": "Ex: 1229 - Transitório."
+      },
+      "receiver_account": {
+        "label": "Account (Chart of Account) - Receiver",
+        "type": "text",
+        "required": true,
+        "helper": "Ex: 115410 - VENDOR ADVANCES - CI&T SOMO INC."
+      },
+      "payer_account": {
+        "label": "Account (Chart of Account) - Payer",
+        "type": "text",
+        "required": false,
+        "helper": "Informe a conta contábil do pagador, se aplicável."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe a documentação de suporte ao chargeback."
+      }
+    },
+    "customer_registration_request": {
+      "label": {
+        "title": "Customer Registration Request",
+        "description_pt": "Solicite o cadastro de novos clientes anexando a documentação exigida. Consulte o passo a passo e a política para saber quais documentos enviar.",
+        "description_en": "Here you can request the registration of new customers by adding the required documentation. See the how-to on account registration and the required documents in the policy."
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Forneça um título breve para o pedido de cadastro."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Inclua detalhes do cliente, documentação disponível e observações relevantes."
+      },
+      "type_of_request": {
+        "label": "Type of request",
+        "type": "radio",
+        "required": true,
+        "options": [
+          "Customer Registration",
+          "Intercompany Setup"
+        ]
+      }
+    },
+    "service_request": {
+      "label": {
+        "title": "Service Request",
+        "description_pt": "Como podemos ajudar você?",
+        "description_en": "How can we help you?"
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Informe o assunto principal da solicitação."
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Descreva o que precisa com o máximo de detalhes."
+      },
+      "component": {
+        "label": "Component",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Documents To File",
+          "Faturamentos Knowledge",
+          "Intercompany and TP Settings",
+          "Others",
+          "Reimbursement"
+        ]
+      },
+      "priority_level": {
+        "label": "Priority Level",
+        "type": "text",
+        "required": false,
+        "helper": "Indique a prioridade ou prazo, se necessário."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Envie documentos, imagens ou evidências para apoiar a solicitação."
+      }
+    }
+  },
+  "finance": {
+    "welcome_message": "Welcome! You can open a request for Finance using the options provided.",
+    "question": "Como podemos ajudar você?",
+    "service_request": {
+      "label": {
+        "title": "Service Request",
+        "description_pt": "Como podemos ajudar você?",
+        "description_en": "How can we help you?"
+      },
+      "summary": {
+        "label": "Summary",
+        "type": "text",
+        "required": true,
+        "helper": "Forneça um título claro para a solicitação financeira."
+      },
+      "priority_level": {
+        "label": "Priority Level",
+        "type": "text",
+        "required": false,
+        "helper": "Indique a prioridade ou prazo se necessário."
+      },
+      "company": {
+        "label": "Company",
+        "type": "select",
+        "required": false,
+        "helper": "Selecione a empresa relacionada ao pedido.",
+        "options": [
+          "Argentina",
+          "Austrália",
+          "China",
+          "CI&T Canada",
+          "CI&T Colombia",
+          "CI&T Financial",
+          "CI&T Fintech",
+          "CI&T INC (Cayman)",
+          "CI&T Oceania",
+          "CI&T SW",
+          "CI&T UK",
+          "CI&T US",
+          "CINQ",
+          "Consolidado",
+          "Delaware",
+          "Dextra",
+          "Japão",
+          "Portugal",
+          "Somo Custom LTD (UK)",
+          "Somo Global (UK)",
+          "Somo Global INC (USA)",
+          "Somo SAS Colômbia"
+        ]
+      },
+      "components": {
+        "label": "Components",
+        "type": "select",
+        "required": true,
+        "helper": "Escolha o tipo de solicitação apropriado.",
+        "options": [
+          "Comprovante Cartão Corporativo",
+          "Contas a Pagar - Alteração de Dados Bancários para Fornecedores",
+          "Contas a Pagar - Comprovante Pagamento Fornecedor",
+          "Contas a Pagar - Desconto ou Juros/Multa em Fatura",
+          "Contas a Pagar - Exceção de pagamento",
+          "Contas a Pagar - Prorrogação/Exclusão ou Antecipação de Pagamento",
+          "Contas a Pagar - Solicitação de Numerário",
+          "Contas a Pagar/ CC - Solicitação de Adiantamento",
+          "Exceção de pagamento Imposto",
+          "Financeiro - Criação de Classe Financeira",
+          "Financeiro - Solicitações Gerais",
+          "Juros/Multa em fatura CP",
+          "Outras Solicitações",
+          "Reembolso - Despesas Acima de 30 Dias",
+          "Reembolso - Despesas Não Comprovadas",
+          "Reembolso - Solicitações Gerais",
+          "Reembolsos - Comprovante de Pagamento RD",
+          "[OFFSHORE] Other requests",
+          "[OFFSHORE] Reimbursement - General Requests",
+          "[OFFSHORE] Request Payment Exception",
+          "[OFFSHORE] Request Proof Of Payment"
+        ]
+      },
+      "description": {
+        "label": "Description",
+        "type": "rich_text",
+        "required": true,
+        "helper": "Descreva o pedido com detalhes e inclua informações complementares."
+      },
+      "employee_or_supplier": {
+        "label": "Employee / Supplier",
+        "type": "text",
+        "required": false,
+        "helper": "Informe o funcionário ou fornecedor relacionado, se aplicável."
+      },
+      "number_invoice": {
+        "label": "Number Invoice",
+        "type": "text",
+        "required": false,
+        "helper": "Insira o número da nota fiscal ou invoice."
+      },
+      "voucher_quickexpense": {
+        "label": "Voucher QuickExpense",
+        "type": "text",
+        "required": false,
+        "helper": "Informe o identificador do voucher QuickExpense, se houver."
+      },
+      "value": {
+        "label": "Value",
+        "type": "number",
+        "required": true,
+        "helper": "Informe o valor relacionado à solicitação."
+      },
+      "attachment": {
+        "label": "Attachment",
+        "type": "file",
+        "required": false,
+        "helper": "Anexe comprovantes, faturas ou documentos relevantes."
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
-package com.example.demo;
+package br.com.bookmark.bookmark;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FirstCrudApplication {
+public class BookmarkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstCrudApplication.class, args);
+		SpringApplication.run(BookmarkApplication.class, args);
 	}
 
 }
